@@ -1,0 +1,50 @@
+.icon-tixing{
+  font-size: 22px;
+  color: #1661df;
+}
+.completion-status{
+  order: -1;
+}
+.avatar{
+  order: 3;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  order: 3;
+  text-align: center;
+  overflow: hidden;
+}
+.avatar img{
+  width: 40px;
+  height: 40px;
+}
+
+.container {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.completed {
+  opacity: 0.64;
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+.priority-normal {
+  border-left: 3px solid #A6A6A6;
+}
+
+.priority-important {
+  border-left: 3px solid #FFAF38;
+}
+
+.priority-emergency {
+  border-left: 3px solid red;
+}
+.due-date {
+  background-color: #FF4F3E;
+  color: #fff;
+}
+:host {
+  width: 100%;
+}

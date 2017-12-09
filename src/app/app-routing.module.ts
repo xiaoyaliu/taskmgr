@@ -6,10 +6,21 @@ const routes: Routes = [
       redirectTo: '/login',
       pathMatch: 'full'
   },
+  {
+    path: 'project',
+    redirectTo: '/project',
+    pathMatch: 'full'
+  },
+  {
+    path: 'task',
+    redirectTo: '/task',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

@@ -8,7 +8,8 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class HeaderComponent implements OnInit {
   @Output()
   toggle = new EventEmitter<void>();
-
+  @Output()
+  styleToggle = new EventEmitter<boolean>();
   constructor() {
   }
 
@@ -17,5 +18,8 @@ export class HeaderComponent implements OnInit {
 
   openSideBar() {
     this.toggle.emit();
+  }
+  onChange(checked: boolean) {
+    this.styleToggle.emit(checked);
   }
 }
